@@ -1,0 +1,242 @@
+/* variables */
+:root {
+  // Colors
+  --color-pure-black: #000;
+  --color-pure-white:#fff;
+  --color-almostopaque-white: rgba(255, 255, 255, 0.8);
+  --color-soft-grey: #c2c2c2;
+  --color-soft-white: #edeae8;
+  --color-transparent: rgba(0, 0, 0, 0);
+  // Specific structure attributes
+  --background-background: var(--color-soft-white);
+  --background_overlay-background: var(--color-almostopaque-white);
+  --services-background: var(--color-pure-black);
+  --navbar-background: var(--color-soft-grey);
+  --navbar-a-color: var(--color-pure-white);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  overflow: auto;
+}
+
+/* Start windows stylizing */
+
+#background {
+  overflow: hidden;
+  height: 100vh;
+  background: var(--background-background);
+  position: relative;
+}
+
+#background_overlay {
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  background-color: var(--background_overlay-background);
+}
+
+#title {
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  transform: translate(-20%, -50%);
+}
+
+#title h1 {
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: .4px;
+  font-size: 40px;
+}
+
+#title h2 {
+  font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+  letter-spacing: .4px;
+  font-size: 20px;
+}
+
+.cover-button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background: var(--color-transparent);
+  border: 3px solid #127ee3;
+  color: var(--color-pure-black);
+  font-size: 20px;
+  font-family: 'Roboto condensed';
+  animation-duration: .6s;
+  border-radius: 4px;
+  animation-name: fill-background-transparent;
+}
+
+.cover-button:hover{
+  animation-duration: .6s;
+  animation-name: fill-background-blue;
+  color: var(--color-pure-white);
+  background: #127ee3;
+
+}
+
+@keyframes fill-background-transparent {
+  from{
+    background: #127ee3;
+  }
+  to{
+    background: var(--color-transparent);
+  }
+}
+
+@keyframes fill-background-blue {
+  from{
+    background: var(--color-transparent);
+  }
+  to{
+    background: #127ee3;
+  }
+}
+/*/ video {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}*/
+
+/* Services stylizing */
+
+#services {
+  position: relative;
+  width: 100%;
+  visibility: visible;
+  background: var(--services-background); /* u should't seee it */
+}
+
+.navbar {
+  display: flex;
+  background: var(--navbar-background);
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-around;
+  padding-bottom: 20px;
+  padding-top: 25px;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 5px;
+  padding-right: 20px;
+}
+
+.item-icon{
+  flex: 1;
+  text-align: center;
+}
+
+/*.experiment{
+  background-image: url(erlenmeyer_flask_anim_over.svg);
+}*/
+
+.item-text{
+  flex: 3;
+}
+
+.item-text a {
+  line-height: 1;
+  text-decoration: none;
+  font-size: 24px;
+  color: var(--navbar-a-color);
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+
+  border-bottom: 3px solid var(--color-transparent);
+  display: inline-block;
+  line-height: 1.2;
+}
+
+.item-text a:hover{
+  border-bottom: 3px solid var(--navbar-a-color);
+  display: inline-block;
+  line-height: 1.2;
+}
+
+.item-text h2 {
+  font-size: 18px;
+  font-family: 'Source Sans Pro';
+}
+
+/* Footer stylizzing */
+
+footer{
+  display: flex;
+  flex-direction: column;
+  background: #2b2929;
+  padding: 20px;
+}
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 10px;
+}
+
+.footer a{
+  font-family: 'Source Sans Pro';
+  font-size: 18px;
+  color: var(--navbar-a-color);
+  text-decoration: none;
+}
+
+.foot-left{
+  flex: 1;
+}
+
+.footer-option{
+  color: var(--color-soft-grey);
+}
+
+.footer-button{
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  background: var(--color-transparent);
+  font-size: 18px;
+  font-family: 'Source Sans Pro';
+  color: var(--color-soft-grey);
+}
+
+.footer-button.active{
+  color: var(--navbar-a-color);
+}
+
+.foot-right{
+  flex: 1;
+  font-size: 18px;
+  color: var(--navbar-a-color);
+  text-align: right;
+  font-family: 'Source Sans Pro';
+}
+
+.foot-right li{
+  list-style: none;
+}
+
+.foot-right h2{
+  font-size: 18px;
+  font-family: 'Source Sans Pro';
+  text-decoration: none;
+}
+
+@media (min-width: 730px) and (max-width:1920px) {
+  .nav-item{
+    padding-right: 40px
+  }
+}
+@media (min-width:1300px){
+  #title h1{
+    font-size: 60px;
+  }
+  #title h2{
+    font-size: 25px;
+  }
+}
