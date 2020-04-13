@@ -4,123 +4,49 @@
     <meta charset="utf-8">
     <title>Home · Juan Cerdeño</title>
     <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:700|Source+Sans+Pro|Poppins|Open+Sans:600|Roboto+Condensed:700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="erlenmeyer_flask_anim_over.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins|Open+Sans|Roboto+Condensed:700&display=swap" rel="stylesheet">
   </head>
   <body>
+    <div class="top">
+      <a href="https://ajuancer.github.io/">
+        <img id="top-logo"src="media/icons/logo_v2.svg" alt="Juan Cerdeño">
+      </a>
+    </div>
     <div class="main">
-      <div id="background">
-        <video id="background_video" autoplay loop muted>
-          <source src="media/Foggy Mountain.mp4" type="video/mp4">
-        </video>
+      <div class="left">
+        <h1>Proyects index:</h1>
+        <ul>
+          <li>
+            <a href="https://github.com/ajuancer/door_opener">Smart bicycle (door opener)</a>
+          </li>
+          <li>
+            <a href="https://github.com/ajuancer/jabs">JABS (backup system)</a>
+          </li>
+          <li>
+            <a href="https://github.com/ajuancer/ajuancer.github.io">Personal web</a>
+          </li>
+        </ul>
       </div>
-      <div id="title">
-        <h1>Hi, welcome to my personal page.</h1>
-        <h2>I'm Juan Cerdeño (maybe you know me as ajuanca or juancer).</h2>
-        <h2>I'm a teenager curious about the real & virtual world.</h2>
-        <button type="button" class="cover-button" name="go_to_services">Discover my work</button>
+      <div class="right">
+        <h1>👋 Hi! This is my personal web.</h1>
+        <h2>I'm Juan (@juancer and its derivatives). This page is still in development, although you can see my last recent activity.</h2>
+        <ul>
+          <li>
+            <a href="mailto:aljuanca.2003@gmail.com">Mail</a>
+          </li>
+          <li>
+            <a href="https://github.com/ajuancer/">Github</a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UChr697I2etW1MykNf5fi4tg">Youtube (video soon)</a>
+          </li>
+          <li>
+            <a href="https://vsco.co/juancer-">Vsco.co</a>
+          </li>
+        </ul>
       </div>
     </div>
-    <div id="services">
-      <ul class="navbar">
-        <li>
-          <div class="nav-item" id="projects_and_experiments">
-            <div class="item-icon experiment play">
-              <img src="media/icons/erlenmeyer_flask.svg" id="projects_and_experiments_image" alt="" width="60px">
-            </div>
-            <div class="item-text">
-              <a href="#">Projects and experiments.</a>
-              <h2>A good way to learn is by practicing. Projects of different kinds (like systems based on Arduino) and experiments are recopiled here. Feel free of using anything you want. I don't care about licensing (I ussually just give a simple Creative Commons license to my work, so don't be shy).</h2>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="nav-item">
-            <div class="item-icon">
-              <img src="media/icons/notebook.svg" alt="" width="60px">
-            </div>
-            <div class="item-text">
-              <a href="#">Posts around the web.</a>
-              <h2>I like to tell what I do and think. Here you can find all that. This is a recopilatory site of the post in other pages like Instrutables or Arduino HUB, plus some articles. Just visit this page if you're looking for anything you read about before and could't find in the original site, or if you want to know a little more about me.</h2>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="nav-item">
-            <div class="item-icon">
-              <img src="media/icons/time_line.svg" alt="">
-            </div>
-            <div class="item-text">
-              <a href="#">Time line.</a>
-              <h2>Like the phone box, you can travel in time and see a little bit about my life, what stages have I followed and what I'm current doing.</h2>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="nav-item">
-            <div class="item-icon">
-              <img src="media/icons/danger.svg" alt="" width="60px">
-            </div>
-            <div class="item-text">
-              <a href="#">Danger. This page may not even exits.</a>
-              <h2>Just a place to try some ideas around my mind. I use it like a experimental zone, so what you can find here is very various. If what you see is useful to you, and you're interested about it, let me know because it's a dinamic part and maybe when you check it again the resource has disapeared.</h2>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <footer>
-      <div class="logo">
-        <a href="#"><img src="media/icons/logo_v2.svg" height="50px" alt=""></a>
-      </div>
-      <div class="foot-bottom">
-        <div class="footer">
-          <div class="foot-left">
-            <ul>
-              <li><a href="#">Contact</a></li>
-              <li>
-                <a href="#">License</a>
-              </li>
-              <li>
-                <a href="#">About me</a>
-              </li>
-              <li>
-                <a href="#">Resources used</a>
-              </li>
-            </ul>
-          </div>
-          <div class="foot-right">
-            <ul>
-              <li class="footer-option">
-                <button class="footer-button" type="button" name="go_top">Go to top</button> /
-                <button class="footer-button" type="button" name="nothing">Stay here</button>
-                <!--Go to top / Stay here-->
-              </li>
-              <li class="footer-option">
-                <button class="footer-button" type="button" name="lang_en">English</button> /
-                <button class="footer-button" type="button" name="lang_es">Español</button>
-                <!-- English / Español -->
-              </li>
-              <li class="footer-option">
-                <!--Day mode / Night theme-->
-                <button class="footer-button" type="button" name="theme_light">Day theme</button> /
-                <button class="footer-button" type="button" name="theme_dark">Night theme</button>
-              </li>
-              <!--h2>Hosted by Cloudflare</h2>
-              <h2>Designed with ❤️ and ☕ by juancer</h2>
-              <h2>CC 2020 BY-NS</h2 -->
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- hr -->
-    </footer>
-    <!-- Bideo.js simplified -->
-    <script src="js/resize_video.js"></script>
-
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-
     <script src="js/main.js"></script>
   </body>
 </html>
