@@ -1,6 +1,6 @@
 // Dark theme switcher.
 var date = new Date();
-if (!(date.getHours() > 21 || date.getHours() < 6)) {
+if ((date.getHours() > 21 || date.getHours() < 6)) {
   document.documentElement.setAttribute('data-theme', 'dark');
   document.getElementById('top-logo').src='media/icons/logo_v2.svg';
 }
