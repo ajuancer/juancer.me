@@ -1,226 +1,160 @@
-/* variables */
-:root {
-  // Colors
-  --color-pure-black: #000;
-  --color-pure-white:#fff;
-  --color-almostopaque-white: rgba(255, 255, 255, 0.8);
-  --color-soft-grey: #c2c2c2;
-  --color-soft-white: #edeae8;
-  --color-transparent: rgba(0, 0, 0, 0);
-  // Specific structure attributes
-  --background-background: var(--color-soft-white);
-  --background_overlay-background: var(--color-almostopaque-white);
-  --services-background: var(--color-pure-black);
-  --navbar-background: var(--color-soft-grey);
-  --navbar-a-color: var(--color-pure-white);
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Titillium+Web:ital@0;1&display=swap');
+html{
+--background-main: hsla(0, 0%, 98%, 1);
+--text-color-normal: hsla(0, 0%, 0%, 1);
+--text-color-light: #8cabd9;
 }
 
-a{
-  color: white;
-  font-family: 'Open Sans';
-  font-weight: 400;
-  text-decoration: none;
+html[data-theme='dark'] {
+  --background-main: hsla(0, 0%, 15%, 1);
+  --text-color-normal: hsla(210, 10%, 95%, .9);
+  --text-color-light: hsl(210, 15%, 35%);
 }
 
-a:hover{
-  text-decoration: underline;
-}
 
 * {
   padding: 0;
   margin: 0;
-  background: rgb(47, 77, 87);
+  background: var(--background-main)
 }
 
-.top{
-  height: 25vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+body {
+  width: 60%;
+  margin: 0 auto;
 }
 
-#top-logo{
-  height: 50px;
-  margin-top: 4vh;
+h1 {
+  color: var(--text-color-normal);
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  letter-spacing: .1px;
+  padding-bottom: .6rem;
 }
 
-.main{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.left{
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  margin-right: 1.8rem;
-  text-align: right;
-}
-
-.left h1{
-  font-size: 1rem;
-  text-transform: uppercase;
-  font-family: 'Open Sans';
-  font-weight: 400;
-  color: white;
-  padding-bottom: .5rem;
-}
-
-.left ul{
-  list-style-type: none;
-}
-
-.left li{
-  margin-top: .4rem;
-}
-
-
-.right{
-  width: 50%;
-  margin-left: 1.8rem;
-}
-
-.right h1{
-  font-family: 'Open Sans';
+h2 {
+  color: var(--text-color-normal);
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.2rem;
   font-weight: 300;
-  font-size: 1.8rem;
-  color: white;
-  padding-bottom: 1rem;
+  letter-spacing: .2px;
+  line-height: 1.4;
 }
 
-.right h2{
-  font-family: 'Open Sans';
+li {
+  content: "\2022";
+  color: var(--text-color-normal);
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1rem;
+  letter-spacing: .2px;
+  line-height: 1.8;
+}
+
+li a {
+  color: var(--text-color-normal);
   font-weight: 300;
   font-size: 1.2rem;
-  color: white;
+  text-decoration: none;
+  style: italic;
+  font-style: italic;
 }
 
-.right ul{
-  padding-top: 1rem;
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-
-.bottom{
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  padding-top: 40vh;
-  align-items: center;
-  align-self: flex-end;
-}
-.bottom a{
+li a:hover {
   text-decoration: underline;
 }
 
-.bottom h3{
-  color: white;
-  font-family: 'Open Sans';
+li span {
+  color: var(--text-color-normal);
   font-weight: 300;
-  font-size: .8rem;
-  width: 50%;
-}
-#left{
-  text-align: right;
-  margin-right: 4rem
+  font-size: 1.2rem;
 }
 
-@media only screen and (max-width:800px){
+.top {
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .top{
-    height: 20vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+#top-logo {
+  height: 3.5rem;
+}
 
-  #top-logo{
-    height: 40px;
-    margin-top: 2vh;
-  }
+#about-me h2 button {
+  color: var(--text-color-normal);
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: .2px;
+  line-height: 1.4;
+  border: none;
+  text-decoration: none;
+  font-style: italic;
+}
 
-  .main{
-    flex-direction: column;
-    padding: 0;
-    margin: 0 ;
-    width: 100%;
-    align-items: center;
-  }
+#about-me h2 button:hover {
+  text-decoration: underline;
+}
 
-  .right{
-    justify-content: center;
-    order: 1;
-    align-items: center;
-    width: 90%;
-    margin: 0;
-    padding: 0;
-    padding-bottom: 3rem;
-  }
+#mail-tooltip {
+  background: #333;
+  color: hsla(210, 10%, 100%, 1);
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1rem;
+  letter-spacing: .2px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: none;
+}
 
-  .right h1{
-    text-align: justify;
-    font-size: 1.2rem;
-    padding: 0;
-    margin: 0;
-  }
+#mail-tooltip[data-show] {
+  display: block;
+}
 
-  .right h2{
-    text-align: justify;
-    font-size: 1rem;
-    font-weight: 300;
-    padding: 0;
-    margin: 0;
-    padding-top: 1.2rem;
-  }
+#arrow,
+#arrow::before {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  z-index: -1;
+}
 
-  .right ul{
-    align-items: center;
-    align-content: stretch;
-    margin: 0;
-    padding: 0;
-    padding-top: 1.2rem;
-    width: 90%;
-    flex-wrap: wrap;
-  }
+#arrow::before {
+  content: '';
+  transform: rotate(45deg);
+  background: #333;
+}
 
-  .right li{
-    margin: 0;
-    padding: 0;
-    padding: 1rem 1rem;
-  }
+#mail-tooltip[data-popper-placement^='top']>#arrow {
+  bottom: -4px;
+}
 
-  .left{
-    order: 2;
-    margin: 0;
-    text-align: left;
-    align-items: center;
-    padding-top: 1rem;
-    width: 90%;
-  }
+#mail-tooltip[data-popper-placement^='bottom']>#arrow {
+  top: -4px;
+}
 
-  .bottom{
-    flex-direction: column;
-    padding-top: 4rem;
-    align-items: center;
-    justify-content: flex-end;
-    margin: 0;
-    padding-bottom: 1%;
-    text-align: center;
-  }
+#mail-tooltip[data-popper-placement^='left']>#arrow {
+  right: -4px;
+}
 
-  .bottom h3{
-    padding: 0;
-    margin: 0;
-    padding-bottom: .8rem;
-  }
+#mail-tooltip[data-popper-placement^='right']>#arrow {
+  left: -4px;
+}
 
-  #left{
-    text-align: center;
-    margin: 0;
-  }
+#proyects{
+  margin-top: 1.2rem;
+}
+
+.bottom{
+  border-top: solid 2px hsla(0, 0%, 50%, 1);
+  margin-top: 2.6rem;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+}
+.bottom h3 {
+  color: var(--text-color-normal);
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: .2px;
+  line-height: 1.4;
 }

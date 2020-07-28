@@ -1,56 +1,65 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Home · Juan Cerdeño</title>
-    <link rel="stylesheet" href="main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Poppins|Open+Sans|Roboto+Condensed:700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div class="top">
-      <a href="https://ajuancer.github.io/">
-        <img id="top-logo"src="media/icons/logo_v2.svg" alt="Juan Cerdeño">
-      </a>
-    </div>
-    <div class="main">
-      <div class="left">
-        <h1>Proyects index:</h1>
-        <ul>
-          <li>
-            <a href="https://github.com/ajuancer/door_opener">Smart bicycle (door opener)</a>
-          </li>
-          <li>
-            <a href="https://ajuancer.github.io/jabs/">JABS (backup system)</a>
-          </li>
-          <li>
-            <a href="https://twitter.com/AsturianBot">Northern statistics</a>
-          </li>
-        </ul>
+
+<head>
+  <meta charset="utf-8">
+  <title>Home // Juan Cerdeño</title>
+  <link rel="stylesheet" href="main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <div class="top">
+    <a href="https://ajuancer.github.io/">
+      <img id="top-logo" src="media/icons/logo_v2_bk.svg" alt="Juan Cerdeño">
+    </a>
+  </div>
+
+  <div class="main">
+    <div id="about-me">
+      <h1>👋 Hi! I'm Juan Cerdeño, a teenager based in Asturias (Spain).</h1>
+      <h2>
+        I'm in my last year of High School.
+        When I'm not studying or with friends, I spent the remaining time with many hobbies.
+        Some of this are taking photos, contributing to some proyects, or learning more.
+        We've maybe met before on the internet, where I usually call myself @juancer -or any other derivate-.
+        Feel free to contact me through my personal mail <button id="mail-button" class="mail" data-clipboard-text="aljuanca.2003@gmail.com">aljuanca.2003@gmail.com</button>.
+      </h2>
+      <div id="mail-tooltip" role="tooltip">
+        Click to copy!
+        <div id="arrow" data-popper-arrow></div>
       </div>
-      <div class="right">
-        <h1>👋 Hi! This is my personal web.</h1>
-        <h2>I'm Juan (@juancer and its derivatives). This page is still in development, although you can see my last recent activity.</h2>
-        <ul>
-          <li>
-            <a href="mailto:aljuanca.2003@gmail.com">Mail</a>
-          </li>
-          <li>
-            <a href="https://github.com/ajuancer/">Github</a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/channel/UChr697I2etW1MykNf5fi4tg">Youtube (video soon)</a>
-          </li>
-          <li>
-            <a href="https://vsco.co/juancer-">vsco.co</a>
-          </li>
-        </ul>
-      </div>
+      <h2 style="white-space: pre-line">You can find me on:</h2>
+      <ul>
+        <li>
+          <a href="https://github.com/ajuancer/">GitHub</a><span>,</span>
+        </li>
+        <li>
+          <a href="/blog">my personal blog</a><span>, and</span>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UChr697I2etW1MykNf5fi4tg">Youtube</a><span>.</span>
+        </li>
+      </ul>
     </div>
-    <div class="bottom">
-      <h3 id="left">Designed by <a href="https://github.com/ajuancer/">@ajuancer</a> with ☕.</h3>
-      <h3>© 2020 <a href="https://github.com/ajuancer/">@ajuancer</a></h3>
+    <div id="proyects">
+      <h1>Proyects</h1>
+      <h2>Some proyects I have developed ir oder to fix problems which have come to me are:</h2>
+      <ul>
+        <li><a href="https://twitter.com/AsturianBot">AsturianBot</a><span>, a Twitter bot that publishes daily statistics about the COVID19 crisis in the region.</span></li>
+        <li><a href="/jabs">JABS</a><span>, a backup system, specialized on media files, that works through WiFi or USB.</span></li>
+        <li><a href="/door_opener">Smart bicycle: Door opener</a><span>, an Arduino-based system that opens the garage door when you're arriving.</span></li>
+      </ul>
     </div>
-    <script src="js/main.js"></script>
-  </body>
+  </div>
+
+  <div class="bottom">
+    <h3>Designed by @juancer with ☕.</h3>
+    <h3>(c) 2020</h3>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
