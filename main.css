@@ -140,7 +140,7 @@ li span {
   left: -4px;
 }
 
-#proyects{
+#projects{
   margin-top: 1.2rem;
 }
 
@@ -157,4 +157,29 @@ li span {
   font-weight: 300;
   letter-spacing: .2px;
   line-height: 1.4;
+}
+
+
+@media(max-width: 854px){
+  body{
+    width: 70%;
+  }
+  h1{
+    font-size: 1.4rem;
+  }
+}
+
+@media(max-width:500px){
+  h2{
+    font-size: 1rem;
+  }
+  #about-me h2 button{
+    font-size: 1rem;
+  }
+  li a{
+    font-size: 1rem;
+  }
+  li span{
+      font-size: 1rem;
+  }
 }
