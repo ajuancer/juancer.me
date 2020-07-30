@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/constant.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/post.css' | relative_url }}">
+  </head>
+  <body>
+    {% include header.html %}
+    <div class="post">
+      <div id="post-info">
+        <h1 class="info-text"><span>Title: </span> {{ page.title }}</h1>
+        <h2 class="info-text"><span>Author: </span>{{ page.author }}</h2>
+        <h2 class="info-text"><span>Date: </span>{{ page.date | date: "%-d %B %Y"}}</h2>
+        <div id="info-img-container">
+          <img src="{{site.static_files.path}}" alt="">
+        </div>
+      </div>
+      <div id="post-content">
+        {{ content }}
+      </div>
+    </div>
+    {% include footer.html %}
+    <script type="text/javascript" src="{{ '/assets/js/post.js' | relative_url }}"></script>
+  </body>
+</html>
