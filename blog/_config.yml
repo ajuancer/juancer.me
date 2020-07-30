@@ -28,7 +28,7 @@ url: "https://ajuancer.github.io" # the base hostname & protocol for your site, 
 github_username: ajuancer
 
 # Build settings
-theme: minima
+theme: default
 plugins:
   - jekyll-feed
 permalink: /post/:year/:title:output_ext
