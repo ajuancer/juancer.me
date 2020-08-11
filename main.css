@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Titillium+Web:ital@0;1&display=swap');
-html{
---background-main: hsla(0, 0%, 98%, 1);
---text-color-normal: hsla(0, 0%, 0%, 1);
---text-color-light: #8cabd9;
+
+html {
+  --background-main: hsla(0, 0%, 98%, 1);
+  --text-color-normal: hsla(0, 0%, 0%, 1);
+  --text-color-light: #8cabd9;
 }
 
 html[data-theme='dark'] {
@@ -10,7 +11,6 @@ html[data-theme='dark'] {
   --text-color-normal: hsla(210, 10%, 95%, .9);
   --text-color-light: hsl(210, 15%, 35%);
 }
-
 
 * {
   padding: 0;
@@ -140,16 +140,17 @@ li span {
   left: -4px;
 }
 
-#projects{
+#projects {
   margin-top: 1.2rem;
 }
 
-.bottom{
+.bottom {
   border-top: solid 2px hsla(0, 0%, 50%, 1);
   margin-top: 2.6rem;
   padding-top: 1.6rem;
   padding-bottom: 1.6rem;
 }
+
 .bottom h3 {
   color: var(--text-color-normal);
   font-family: 'Titillium Web', sans-serif;
@@ -159,27 +160,30 @@ li span {
   line-height: 1.4;
 }
 
-
-@media(max-width: 854px){
-  body{
+@media(max-width: 854px) {
+  body {
     width: 70%;
   }
-  h1{
+
+  h1 {
     font-size: 1.4rem;
   }
 }
 
-@media(max-width:500px){
-  h2{
+@media(max-width:500px) {
+  h2 {
     font-size: 1rem;
   }
-  #about-me h2 button{
+
+  #about-me h2 button {
     font-size: 1rem;
   }
-  li a{
+
+  li a {
     font-size: 1rem;
   }
-  li span{
-      font-size: 1rem;
+
+  li span {
+    font-size: 1rem;
   }
 }
