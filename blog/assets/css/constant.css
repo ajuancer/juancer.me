@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Titillium+Web:ital@0;1&display=swap');
+
+html{
+--background-main: hsla(0, 0%, 98%, 1);
+--text-color-normal: hsla(0, 0%, 0%, 1);
+
+/* --text-color-light:  hsla(216, 50%, 52%, 1);
+--text-color-intense:  hsla(201, 51%, 20%, 1); */
+
+--text-color-light:  hsla(0, 0%, 55%, 1);
+--text-color-intense:  hsla(220, 61%, 49%, 1);
+}
+
+html[data-theme='dark'] {
+  --background-main: hsla(0, 0%, 15%, 1);
+  --text-color-normal: hsla(210, 10%, 95%, .9);
+  /* --text-color-light: hsl(210, 15%, 35%); */
+}
+
+#main-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 2px hsla(0, 0%, 50%, 1);
+  margin: auto;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  margin-bottom: 2.6rem;
+  width: 60%;
+}
+
+#header-img{
+  padding-left: 2rem;
+  height: 3rem;
+}
+
+#header-links{
+  display: flex;
+  flex-direction: row;
+}
+
+#header-links ul{
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  line-height: 2rem;
+}
+
+#header-links a{
+  color: var(--text-color-normal);
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-style: italic;
+  margin-right: 2rem;
+}
+
+#header-links a:hover{
+  border-bottom: solid 2px hsla(0, 0%, 50%, 1);
+}
+
+footer{
+  border-top: solid 2px hsla(0, 0%, 50%, 1);
+  margin-top: 2.6rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+footer #lft{
+  flex: 1 0;
+}
+footer #rght{
+  flex: 1 0;
+}
+footer h3 {
+  color: var(--text-color-normal);
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: .2px;
+  line-height: 1.2rem;
+}

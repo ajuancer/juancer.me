@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Blog // Juan Cerdeño</title>
+  <link rel="stylesheet" href="{{ '/assets/css/constant.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}">
+</head>
+
+<body>
+  {% include header.html %}
+  {% if site.posts.size != 0 %}
+    <div class="last-post">
+      <h1>Last post:</h1>
+      <a href=".{{ site.posts[0].url }}">
+        <div id="last-post-container">
+          <div id="img-container">
+            <img id="last-post-img" src="https://cdn.shopify.com/s/files/1/1529/9657/articles/Blog_Post_Header_81.jpg?v=1579105473" alt="Random googled fish">
+          </div>
+          <div id="last-post-content">
+            <h2>{{ site.posts[0].title }}</h2>
+            <h3 id="author" >By {{ site.posts[0].author }} on {{ site.posts[0].date | date: '%B %d, %Y' }}.</h3>
+            <h3>{{ site.posts[0].description }}</h3>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="post-index">
+      <h1>All posts:</h1>
+      <ul>
+        {% assign prev_date = nil %}
+        {% for post in site.posts %}
+          {% assign actual_date = post.date | date: '%Y' %}
+          {% if prev_date != actual_date %}
+            {% if nil != prev_date %}
+              <br>
+            {% endif %}
+            <h2>{{ actual_date }}</h2>
+            {% assign prev_date = post.date | date: '%Y' %}
+          {% endif %}
+          <li>
+            <a href=".{{ post.url }}">{{ post.title }} </a><span>- {{post.date | date: '%B %d, %Y'}}</span>
+          </li>
+        {% endfor %}
+        </ul>
+    </div>
+  {% else %}
+  <div class="no-content">
+    <span>No post (at the moment)</span>
+
+    <img src="{{ '/assets/img/no_post.png' | relative_url }}" alt="No post image">
+  </div>
+  {% endif %}
+  {% include footer.html %}
+  <script type="text/javascript" src="{{ '/assets/js/home.js' | relative_url }}"></script>
+</body>
+
+</html>
