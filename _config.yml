@@ -1,1 +1,12 @@
-theme: jekyll-theme-minimal
+title: Blog // Juan Cerdeño
+description: >- # this means to ignore newlines
+  This is the place where I write the stuff that pass through my head.
+baseurl: "/blog" # the subpath of your site
+url: "https://ajuancer.github.io" # the base hostname & protocol for your site
+github_username:  ajuancer
+permalink: /post/:year/:title:output_ext
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
