@@ -39,7 +39,14 @@ h2 {
   letter-spacing: .2px;
   line-height: 1.4;
 }
-
+h2 a{
+  text-decoration: none;
+  font-style: italic;
+  color: var(--text-color-normal)
+}
+h2 a:hover{
+  text-decoration: underline;
+}
 li {
   content: "\2022";
   color: var(--text-color-normal);
