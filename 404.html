@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Nowhere</title>
+</head>
+<body>
+    <h2 class="fw1 lh-solid pl4 pt4 mr2">If you're reading this, the page you have requested, <p id="current-url" class="fw4 dib ma0 pa0"></p>, doesn't exist.</h2>
+    <h3 class="fw1 pl4 normal mr2"><p class="pt1"></p> Maybe it's <p class="light-red dib ma0 pa0">not available temporarily</p>, I have <p class="light-red dib ma0 pa0">moved to another dir</p>ectory (ie: changed the title) or I have <p class="light-red dib ma0 pa0">deleted</p> it.<br><p class="pt1"></p>
+        Anyway, you don't care about the problem, you want <p class="green dib ma0 pa0">solutions</p>:<br>
+    <ul class="fw1 lh-solid pl5 mt0 pt0 normal measure">
+        <li class="fw1 lh-title"><p class="pt1"></p> I suggest you to go to the <a href="/" class="link fw1 underline green dim ma0 pa0">home page</a>, and <p class="green dib ma0 pa0">navigate</p> a bit (hopefully you will find what you were looking for).</li>
+        <li class="fw1 lh-title mt3 pt1">Also remember that <p class="green dib ma0 pa0">my mail is always open</p> (it's available in the <a href="/" class="link fw1 underline black dim ma0 pa0">home page</a>), so you can ask me about it<p class="green dib ma0 pa0"></p>.</li>
+    </ul>
+        <p class="pt3 ma0">Sorry about this,</p><br>
+        <p class="pt1 ma0">~~ Juan Cerdeño</p></h3>
+    <script>
+        document.getElementById('current-url').innerText = /\/\/(.+)/.exec(window.location.href)[1]
+    </script>
+    
+</body>
+</html>
