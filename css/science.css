@@ -1,0 +1,38 @@
+.readable{
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figcaption{
+    font-style: italic;
+}
+
+figcaption a{
+    font-style: normal;
+}
+
+#des h1{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+#des a{
+    color: #357edd;
+    text-decoration: none;
+}
+
+#des a:hover{
+    text-decoration: underline;
+}
+
+#des figure{
+    max-width: 60%; /*20rem*/
+    padding: 10px;
+    border: solid black 1px;
+    margin-left: 20%;
+}
+
+#des p{
+    text-align: justify;
+}
