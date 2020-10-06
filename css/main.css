@@ -10,6 +10,12 @@
     max-width: 40rem;
 }
 
+.twitter-tweet{
+    margin: 0 auto;
+    max-width: 90%;
+    align-content: center;
+}
+
 @media (max-width: 600px){
     footer div{
         flex-direction: column;

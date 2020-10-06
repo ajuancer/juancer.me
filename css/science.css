@@ -36,3 +36,11 @@ figcaption a{
 #des p{
     text-align: justify;
 }
+
+/* .footnotes > hr{
+    display: none;
+}*/
+
+.footnotes{
+    margin-top: 0rem;
+}
