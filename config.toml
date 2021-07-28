@@ -1,0 +1,7 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = ""
+copyright = "© Juan Cerdeño {year}"
+theme = "Simple"
+[build]
+  writeStats = true
