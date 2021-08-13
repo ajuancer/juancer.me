@@ -4,3 +4,4 @@
 /node_modules
 /themes/simple/resources
 /themes/simple/node_modules
+/**/test*

@@ -1,7 +1,17 @@
-baseURL = "http://example.org/"
+baseURL = "https://ajuancer.github.io/"
 languageCode = "en-us"
-title = ""
-copyright = "© Juan Cerdeño {year}"
+title = "ajuancer.github.io"
+copyright = "© Juan Cerdeño 2021"
 theme = "Simple"
-[build]
-  writeStats = true
+[params]
+  copyrightTemplate = "© Juan Cerdeño {year}"
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.highlight]
+    style = "pastie"
+#     noClases = false
+#
+# pygmentsUseClasses = true
+# pygmentsCodeFences = true

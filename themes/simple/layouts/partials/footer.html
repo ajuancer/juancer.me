@@ -1,1 +1,23 @@
-{{ replace .Site.Copyright "{year}" now.Year }}
+<footer class="footer-text">
+    <div>
+        <hr>
+        <dl>
+            <dl>
+                <dt>License</dt>
+                <dd>{{ replace .Site.Params.copyrightTemplate "{year}" now.Year }}. <a href="/license">More info.</a></dd>
+            </dl>
+            <dl>
+                <dt>Hosting</dt>
+                <dd><a href="https://pages.github.com">GitHub pages</a></dd>
+            </dl>
+            <dl>
+                <dt>Generator</dt>
+                <dd><a href="https://gohugo.io">Hugo</a></dd>
+            </dl>
+            <dl>
+                <dt>Style</dt>
+                <dd><a href="https://tailwindcss.com">Tailwind CSS</a></dd>
+            </dl>
+        </dl>
+    </div>
+</footer>

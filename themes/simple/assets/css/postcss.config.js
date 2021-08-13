@@ -2,6 +2,7 @@ const themeDir = __dirname + '/../../';
 
 const purgecss = require('@fullhuman/postcss-purgecss')({
   // see https://gohugo.io/hugo-pipes/postprocess/#css-purging-with-postcss
+  enabled: true,
   content: [
     './hugo_stats.json',
     themeDir + '/hugo_stats.json',
@@ -18,6 +19,7 @@ module.exports = {
     require('postcss-import')({
       path: [themeDir],
     }),
+    require('postcss-nested'),
     require('tailwindcss')(themeDir + 'assets/css/tailwind.config.js'),
     require('autoprefixer')({
       path: [themeDir],
