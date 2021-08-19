@@ -1,0 +1,15 @@
+<header class="w-full py-7 header-text">
+    <nav class="flex flex-wrap items-center">
+        <a href="{{ .Site.Home.Permalink }}" class="font-bold tracking-wide text-xl border-b-2 home-text">
+            Juan Cerdeño
+        </a>
+        <ul id="nav-menu" class="flex items-center flex-wrap">
+            {{$page := .}}
+            {{ range .Site.Menus.covid19 }}
+            <li>
+                <a href="{{ .URL }}" class="hover:underline p-1 {{ if not ($page.IsMenuCurrent "main" .) }}hover:{{ end }}mark-link">{{ .Name | strings.ToLower }}</a>
+            </li>
+            {{ end }}
+        </ul>
+    </nav>
+</header>
