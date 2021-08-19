@@ -17,7 +17,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        robotoMono: ['Roboto Mono'],
+        firaCode: ['FiraCode'],
       },
     },
   },

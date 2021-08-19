@@ -6,7 +6,9 @@
     "repository": "https://github.com/ajuancer/ajuancer.github.io",
     "author": "Juan Cerdeño",
     "license": "MIT",
-    "scripts": {},
+    "scripts": {
+        "ttf2otf": "node ttf2otf.js"
+    },
     "devDependencies": {
         "@fullhuman/postcss-purgecss": "^4.0.3",
         "@tailwindcss/typography": "^0.4.0",
@@ -14,6 +16,7 @@
         "postcss": "^8.2.15",
         "postcss-cli": "^8.3.1",
         "postcss-import": "^14.0.2",
+        "sfnt2woff": "^1.0.1",
         "tailwindcss": "^2.2.7"
     },
     "browserslist": [
