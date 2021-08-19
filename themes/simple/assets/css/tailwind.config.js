@@ -10,14 +10,13 @@ module.exports = {
     './content/*.md',
     './content/**/*.md',
   ],
-  darkMode: 'media',
   theme: {
     container: {
       center: false,
     },
     extend: {
       fontFamily: {
-        firaCode: ['FiraCode'],
+        firaCode: ['FiraCode', 'monospace'],
       },
     },
   },
