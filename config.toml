@@ -2,7 +2,7 @@ baseURL = "https://ajuancer.github.io/"
 languageCode = "en-us"
 title = "ajuancer.github.io"
 copyright = "© Juan Cerdeño 2021"
-theme = "Simple"
+theme = "simple"
 [params]
   copyrightTemplate = "© Juan Cerdeño {year}"
 
