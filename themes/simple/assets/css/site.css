@@ -79,13 +79,11 @@ body {
     @apply border-l-4 border-yellow-600 dark:border-yellow-600 pl-4 my-1 py-1 bg-gray-100 dark:bg-gray-800;
   }
   & figure {
-    @apply py-2;
-    & img {
-      @apply max-w-md;
-    }
+    @apply py-2 max-w-md border-2 rounded-md p-1 m-2;
+
   }
   & figcaption {
-    @apply py-0 my-0 pt-1 leading-none text-base !important;
+    @apply py-0 my-0 pt-1 leading-none text-base text-justify !important;
     & h4 {
       @apply py-0 py-0 leading-none text-base;
     }
