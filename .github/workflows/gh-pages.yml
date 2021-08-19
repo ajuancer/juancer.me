@@ -29,6 +29,9 @@ jobs:
         with:
           node-version: '14'
 
+      - name: Install NPM dependencies
+        run: npm install && cd themes/simple && npm install
+
       - name: Cache dependencies
         uses: actions/cache@v1
         with:
@@ -38,7 +41,7 @@ jobs:
             ${{ runner.os }}-node-
 
       - run: npm ci
-      - run: hugo --minify
+      - run: NODE_ENV=production hugo --minify --cleanDestinationDir
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
