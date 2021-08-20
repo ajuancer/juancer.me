@@ -1,6 +1,6 @@
-baseURL = "https://ajuancer.github.io/"
+baseURL = "https://juancer.me/"
 languageCode = "en-us"
-title = "ajuancer.github.io"
+title = "juancer.me"
 copyright = "© Juan Cerdeño 2021"
 theme = "simple"
 [params]
