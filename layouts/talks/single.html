@@ -10,6 +10,9 @@
 </head>
 <body>
     <style>
+        b, p, a, h2, div {
+            font-family: Arial, Helvetica, sans-serif;
+        }
         @media (min-width: 600px) {
             img {
             width: 50vh !important;
@@ -17,14 +20,17 @@
         }  
     </style>
     <div class="pa2 bg-black-10">
-        <h2 class="f3 mid-gray lh-title helvetica">Presentación:</h2>
+        <h2 class="f3 mid-gray lh-title helvetica">Presentación "<b>{{.Title}}</b>"</h2>
+        Información general:
         <ul>
-            <li>Título: {{.Params.title}}</li>
-            <li>Fecha: {{.Params.dates}}</li>
-            <li>Descripción: {{.Params.descrip}}</li>
-            <li><a href="#fig">Figuras</a></li>
-            <li><a href="#bib">Bibliografía</a></li>
+            <li><b>Título</b>: {{.Title}}</li>
+            <li><b>Fecha</b>: {{.PublishDate.Format "2006-01-02"}}</li>
+            <li><b>Descripción</b>: {{.Description}}</li>
         </ul>
+
+        <a href="#fig" class="f6 link dim br1 ba bw1 ph3 pv2 mb2 dib black">Figuras</a>
+        <a href="#bib" class="f6 link dim br1 ba bw1 ph3 pv2 mb2 dib black">Bibliografía</a>
+
     </div>
     <div class="pa2">
         <h2 class="f3 mid-gray lh-title helvetica" id="fig">Figuras</h2>
@@ -44,7 +50,7 @@
         <h2 class="f3 mid-gray lh-title helvetica" id="bib">Bibliografía</h2>
         <ol>
             {{range .Params.source}}
-            <li>
+            <li class="pt2">
                     {{ . }}
             </li>
             {{end}}
