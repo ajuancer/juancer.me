@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{.Params.title}}</title>
+    {{$id := .Params.id}}
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
+</head>
+<body>
+    <style>
+        @media (min-width: 600px) {
+            img {
+            width: 50vh !important;
+            }
+        }  
+    </style>
+    <div class="pa2 bg-black-10">
+        <h2 class="f3 mid-gray lh-title helvetica">Presentación:</h2>
+        <ul>
+            <li>Título: {{.Params.title}}</li>
+            <li>Fecha: {{.Params.dates}}</li>
+            <li>Descripción: {{.Params.descrip}}</li>
+            <li><a href="#fig">Figuras</a></li>
+            <li><a href="#bib">Bibliografía</a></li>
+        </ul>
+    </div>
+    <div class="pa2">
+        <h2 class="f3 mid-gray lh-title helvetica" id="fig">Figuras</h2>
+        {{ $items := .Params.resources}}
+        {{ range $items }}
+        <div class="flex flex-wrap">
+
+            <figure class="outline">
+                <img src="/img/talks/{{$id}}/{{.path}}" style="width:100vh" alt="">
+                <br>
+                <caption>{{.des}}</caption>
+            </figure>
+            {{ end }}
+        </div>
+    </div>
+    <div class="pa2 bg-black-10">
+        <h2 class="f3 mid-gray lh-title helvetica" id="bib">Bibliografía</h2>
+        <ol>
+            {{range .Params.source}}
+            <li>
+                    {{ . }}
+            </li>
+            {{end}}
+        </ol>
+    </div>
+</body>
+</html>
