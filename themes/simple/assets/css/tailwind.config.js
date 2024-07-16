@@ -17,7 +17,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        firaCode: ['FiraCode', 'monospace'],
+        inter: ['InterVariable', 'sans-serif'],
       },
     },
   },
