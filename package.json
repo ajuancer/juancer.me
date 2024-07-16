@@ -1,20 +1,22 @@
 {
-    "name": "ajuancer.github.io",
-    "version": "0.0.1",
-    "description": "that is ajuancer.github.io web",
-    "repository": "https://github.com/ajuancer/ajuancer.github.io",
-    "license": "MIT",
-    "scripts": {
-        "start": "hugo server --disableFastRender"
-    },
-    "devDependencies": {
-        "postcss": "^8.2.3",
-        "postcss-cli": "^8.3.1"
-    },
-    "browserslist": [
-        "last 1 version",
-        "> 1%",
-        "maintained node versions",
-        "not dead"
-    ]
+  "name": "ajuancer.github.io",
+  "version": "0.0.1",
+  "description": "that is ajuancer.github.io web",
+  "repository": "https://github.com/ajuancer/ajuancer.github.io",
+  "license": "MIT",
+  "scripts": {
+    "start": "hugo server --disableFastRender",
+    "optimizeFont": "node fontmin.js"
+  },
+  "devDependencies": {
+    "fontmin": "^1.1.0",
+    "postcss": "^8.4.39",
+    "postcss-cli": "^11.0.0"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ]
 }

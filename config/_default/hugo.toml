@@ -1,17 +1,17 @@
 baseURL = "https://juancer.me/"
 languageCode = "en-us"
 title = "juancer.me"
-copyright = "© Juan Cerdeño 2021"
+copyright = "© Juan Cerdeño 2024"
 theme = "simple"
-[params]
-  copyrightTemplate = "© Juan Cerdeño {year}"
 
 [markup]
   [markup.goldmark.renderer]
     unsafe = true
   [markup.highlight]
     style = "pastie"
-#     noClases = false
-#
-# pygmentsUseClasses = true
-# pygmentsCodeFences = true
+
+[build]
+  [build.buildStats]
+    enable = true
+
+
