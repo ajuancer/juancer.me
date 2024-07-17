@@ -1,15 +1,17 @@
-<header class="w-full py-7 header-text">
-    <nav class="flex flex-wrap items-center">
-        <a href="{{ .Site.Home.Permalink }}" class="font-bold border-b-2 home-text">
-            <p class="px-0 sm:p-2">juancer</p>
-        </a>
-        <ul id="nav-menu" class="flex items-center flex-wrap">
-            {{$page := .}}
-            {{ range .Site.Menus.main }}
-            <li>
-                <a href="{{ .URL }}" class="hover:underline p-1 {{ if not ($page.IsMenuCurrent "main" .) }}hover:{{ end }}mark-link">{{ .Name | strings.ToLower }}</a>
-            </li>
-            {{ end }}
-        </ul>
-    </nav>
-</header>
+<div class="header-text">
+    <header>
+        <nav>
+            <a href="{{ .Site.Home.Permalink }}">
+                <p>Juan Cerdeño</p>
+            </a>
+            <ul id="nav-menu">
+                {{$page := .}}
+                {{ range .Site.Menus.main }}
+                <li>
+                    <a href="{{ .URL }}" class="hover:underline p-1 {{ if not ($page.IsMenuCurrent "main" .) }}hover:{{ end }}mark-link">{{ .Name | strings.ToLower }}</a>
+                </li>
+                {{ end }}
+            </ul>
+        </nav>
+    </header>
+</div>
