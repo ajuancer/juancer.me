@@ -1,7 +1,7 @@
 name = "simple"
 license = "MIT"
 description = "simple: simple is a simple package."
-homepage = "https://github.com/ajuancer/ajuancer.github.io"
+homepage = "https://github.com/ajuancer/juancer.me"
 tags = ["Hugo", "Tailwind CSS", "theme", "starter", "boilerplate"]
 features = []
 min_version = "0.69"
