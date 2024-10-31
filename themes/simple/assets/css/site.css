@@ -121,7 +121,7 @@ figcaption {
   }
   /* Paragraph of logo a */
   & a > p {
-    @apply px-0 sm:p-2 border-2 text-yellow-700 border-yellow-700 hover:text-white hover:bg-yellow-700;
+    @apply px-2 sm:p-2 border-2 text-yellow-700 border-yellow-700 hover:text-white hover:bg-yellow-700;
   }
   & .mark-link {
     @apply text-yellow-700 dark:text-yellow-700 !important;
