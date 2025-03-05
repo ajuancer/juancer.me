@@ -1,7 +1,7 @@
 baseURL = "https://juancer.me/"
 languageCode = "en-us"
 title = "Juan Cerdeño"
-copyright = "(c) Juan Cerdeño 2024"
+copyright = "(c) Juan Cerdeño 2025"
 theme = "simple"
 
 [markup]
