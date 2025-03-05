@@ -104,6 +104,36 @@ figcaption {
     @apply w-full py-7;
   }
   & nav {
+    @apply flex items-center;
+  }
+  & div {
+    @apply flex ml-1 flex-col;
+  }
+  & img {
+    @apply w-24 h-24 object-cover;
+  }
+  & h1 {
+    @apply text-xl font-bold ml-3;
+  }
+  & div > ul {
+    @apply flex text-gray-50 list-none ml-0;
+  }
+  & li {
+    @apply ml-2;
+  }
+  & li > a {
+    @apply hover:bg-blue-700 hover:text-gray-50 hover:no-underline no-underline;
+  }
+  & .mark-link {
+    @apply font-bold !important;
+  }
+
+}
+/* .header-text {
+  & header {
+    @apply w-full py-7;
+  }
+  & nav {
     @apply flex flex-wrap items-center;
   }
   & ul {
@@ -115,13 +145,16 @@ figcaption {
   & a {
     @apply m-1 no-underline text-black dark:text-gray-100;
   }
-  /* a inside navigation menu */
+  / * a inside navigation menu * /
   & li > a {
     @apply hover:text-yellow-600 dark:hover:text-yellow-600 hover:bg-yellow-100 dark:hover:bg-opacity-25 dark:hover:bg-yellow-600;
   }
-  /* Paragraph of logo a */
+  / * Paragraph of logo a * /
   & a > p {
     @apply px-2 sm:p-2 border-2 text-yellow-700 border-yellow-700 hover:text-white hover:bg-yellow-700;
+  }
+  & a > img {
+
   }
   & .mark-link {
     @apply text-yellow-700 dark:text-yellow-700 !important;
@@ -129,7 +162,7 @@ figcaption {
   & #nav-menu {
     @apply flex items-center flex-wrap;
   }
-}
+} */
 
 .main-text {
   /* https://stackoverflow.com/a/41491657/11688263 */
