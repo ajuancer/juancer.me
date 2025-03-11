@@ -8,8 +8,8 @@ menus:
 # 👋 ¡Hola!
 
 I am Juan Cerdeño (juancer and derivates on the internet) and this is my personal website.
-I am currently enrolled in university (in fact, in two).
-I work at the [Cátedra MBA Institute of the University of Oviedo](https://catedrambainstitute.uniovi.es) dedicated to medical and biomedical research.
+I am currently enrolled at university (in fact, in two).
+I work at the [Cátedra MBA Institute](https://catedrambainstitute.uniovi.es) of the University of Oviedo, dedicated to medical and biomechanical research.
 
 On my free time I mostly code. Most of my projects live at [github:ajuancer](https://github.com/ajuancer).
 
