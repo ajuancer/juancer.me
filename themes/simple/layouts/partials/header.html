@@ -1,24 +1,20 @@
-<div class="header-text">
-    <header>
-        <nav>
-            <div>
-                <a href="{{ .Site.Home.Permalink }}">
-                    <!-- <p>Juan Cerdeño</p> -->
-                    <img src="{{ absURL "img/me.jpeg"}}" alt="A photo of me backlit, so you can barely make out my face.">
-                </a>
-            </div>
-            
-            <div>
-                <h1>Juan Cerdeño</h1>
-                <ul id="nav-menu">
-                    {{$page := .}}
-                    {{ range .Site.Menus.main }}
-                    <li>
-                        <a href="{{ .URL }}" class="hover:underline p-1 {{ if not ($page.IsMenuCurrent "main" .) }}hover:{{ end }}mark-link">{{ .Name | strings.ToLower }}</a>
-                    </li>
-                    {{ end }}
-                </ul>
-            </div>
-        </nav>
-    </header>
-</div>
+<header>
+    <nav aria-label="Main">
+        <a href="{{ .Site.Home.Permalink }}">
+            <!-- <p>Juan Cerdeño</p> -->
+            <img src="{{ absURL "img/me.jpeg"}}" alt="A photo of me backlit, so you can barely make out my face.">
+        </a>
+        
+        <div>
+            <h1>Juan Cerdeño</h1>
+            <ul>
+                {{$page := .}}
+                {{ range .Site.Menus.main }}
+                <li>
+                    <a href="{{ .URL }}" class="hover:underline p-1 {{ if not ($page.IsMenuCurrent "main" .) }}hover:{{ end }}mark-link">{{ .Name | strings.ToLower }}</a>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+    </nav>
+</header>
