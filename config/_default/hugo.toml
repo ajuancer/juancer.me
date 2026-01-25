@@ -8,7 +8,11 @@ theme = "simple"
   [markup.goldmark.renderer]
     unsafe = true
   [markup.highlight]
-    style = "pastie"
+    # Based on https://swapoff.org/chroma/playground/
+    style = "xcode"
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
 
 [build]
   [build.buildStats]

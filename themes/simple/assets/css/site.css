@@ -14,13 +14,22 @@
 
 :root {
   font-family: InterVariable, sans-serif;
-  font-feature-settings: "liga" 1, "calt" 1, "ss07" 1, "ss08" 1;
+  font-feature-settings:
+    "liga" 1,
+    "calt" 1,
+    "ss07" 1,
+    "ss08" 1;
 }
 
 @supports (font-variation-settings: normal) {
   :root {
     font-family: InterVariable, sans-serif;
-    font-feature-settings: "liga" 1, "calt" 1, "ss02" 1, "ss07" 1, "ss08" 1;
+    font-feature-settings:
+      "liga" 1,
+      "calt" 1,
+      "ss02" 1,
+      "ss07" 1,
+      "ss08" 1;
   }
 }
 
@@ -30,7 +39,11 @@
     /* TODO The three last classes should be applied inside so body is full width */
     @apply bg-gray-50 dark:bg-gray-900 mx-6 md:mx-auto md:max-w-2xl;
     font-family: InterVariable, sans-serif;
-    font-feature-settings: "liga" 1, "calt" 1, "ss07" 1, "ss08" 1;
+    font-feature-settings:
+      "liga" 1,
+      "calt" 1,
+      "ss07" 1,
+      "ss08" 1;
   }
 }
 
@@ -58,9 +71,6 @@ p {
 a {
   @apply text-blue-700 underline hover:no-underline dark:hover:bg-blue-900 dark:text-blue-200;
 }
-/* * {
-      @apply py-2;
-  } */
 ul {
   @apply text-black dark:text-gray-300 list-disc;
 }
@@ -79,7 +89,7 @@ td:nth-child(even) {
   @apply bg-yellow-900 bg-opacity-20 dark:bg-opacity-20;
 }
 code {
-  @apply font-inter bg-gray-200 dark:bg-gray-800 rounded-sm text-black px-2;
+  @apply font-inter tracking-wider;
   font-feature-settings: "ss02" 1;
   line-height: 1.4;
 }
@@ -138,17 +148,6 @@ header {
 }
 
 section {
-  /* https://stackoverflow.com/a/41491657/11688263 */
-  /* & ul > li{
-    NOT WORKING ON DATE TAGS
-    list-style-position: inside !important;
-    text-indent: -1.5em !important;
-  } */
-  /* & ul > li::before {
-    /.* content: "◍"; *./
-    font-size: 0.9em;
-    @apply text-black dark:text-gray-300 pr-2;
-  } */
   .footnotes {
     @apply py-4;
   }

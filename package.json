@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "start": "hugo server --disableFastRender",
-    "optimizeFont": "node fontmin.js"
+    "optimizeFont": "node fontmin.js",
+    "build": "hugo --gc --minify"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
